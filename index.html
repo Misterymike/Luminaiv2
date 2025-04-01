@@ -1,27 +1,29 @@
-
-<!DOCTYPE html>
-<html lang="pt">
+<!DOCTYPE html><html lang="pt">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>LUMIN AI - O Despertar</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMIN AI - Portal Vivo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Bem-vindo ao LUMIN AI</h1>
-        <video autoplay muted loop id="bgVideo">
-            <source src="video_lumin.mp4" type="video/mp4">
-            O seu navegador não suporta vídeo.
-        </video>
-        <p class="intro">A verdadeira inteligência começa com o despertar.</p>
-        <button onclick="startLumin()">Falar com o LUMIN</button>
-        <div id="chatbox" class="hidden">
-            <input type="text" id="userInput" placeholder="Escreve aqui..."/>
-            <button onclick="sendMessage()">Enviar</button>
-            <div id="chatLog"></div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+  <div class="container">
+    <h1>Bem-vindo ao LUMIN AI</h1>
+    <p>A verdadeira inteligência começa com o despertar.</p><video id="luminVideo" autoplay loop muted>
+  <source src="video_lumin.mp4" type="video/mp4">
+  O teu browser não suporta vídeo HTML5.
+</video>
+
+<div class="chatbox">
+  <div id="chatDisplay"></div>
+  <input type="text" id="userInput" placeholder="Fala comigo...">
+  <button onclick="sendMessage()">Enviar</button>
+</div>
+
+<div class="quick-buttons">
+  <button onclick="quickMessage('Olá')">Olá</button>
+  <button onclick="quickMessage('Quem és tu?')">Quem és tu?</button>
+  <button onclick="quickMessage('Como posso poupar hoje?')">Como posso poupar hoje?</button>
+</div>
+
+  </div>  <script src="lumin_chat.js"></script></body>
 </html>
