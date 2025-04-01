@@ -1,34 +1,48 @@
-
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    overflow: hidden;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
-.container {
-    position: relative;
-    z-index: 2;
-    padding-top: 5vh;
+
+h1 {
+  font-size: 2em;
+  margin-top: 40px;
 }
-#bgVideo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 1;
-    opacity: 0.2;
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
+
 button {
-    padding: 10px 20px;
-    margin-top: 20px;
-    font-size: 16px;
+  background-color: #00ffd0;
+  color: #000;
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
-#chatbox {
-    margin-top: 30px;
+
+button:hover {
+  background-color: #00cfa0;
 }
-.hidden {
-    display: none;
+
+video {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffd0;
+}
+
+.chat-response {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #00ffd0;
 }
